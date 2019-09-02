@@ -1,7 +1,6 @@
-project = libbuild2-hello
+project = libbuild2-hello-tests
 
 using version
 using config
 using test
-using install
 using dist

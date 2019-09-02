@@ -1,0 +1,12 @@
+: 1
+name: libbuild2-hello-tests
+version: 0.1.0-a.0.z
+project: libbuild2-hello
+summary: Tests for the test build system module for build2
+license: MIT ; MIT License.
+description-file: README.md
+url: https://example.org/libbuild2-hello
+email: boris@codesynthesis.com
+depends: * build2 >= 0.11.0
+depends: * bpkg >= 0.11.0
+#depends: libhello ^1.0.0

@@ -1,0 +1,5 @@
+basics
+
+# Testscript output directory (can be symlink).
+#
+test-basics

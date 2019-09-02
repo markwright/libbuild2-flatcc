@@ -1,0 +1,4 @@
+: 1
+location: libbuild2-hello/
+:
+location: libbuild2-hello-tests/

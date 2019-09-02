@@ -1,4 +1,0 @@
-import libs  = build2%lib{build2}
-import libs += libbuild2-hello%lib{build2-hello}
-
-exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}

@@ -7,7 +7,7 @@ ixx{*}: extension = ixx
 txx{*}: extension = txx
 cxx{*}: extension = cxx
 
-# Every exe{} in this subproject is by default a test.
+# Every exe{} in this project is by default a test.
 #
 exe{*}: test = true
 
