@@ -18,6 +18,7 @@ namespace build2
           const variable_map&)
     {
       info (l) << "module hello initialized";
+      return true;
     }
 
     static const module_functions mod_functions[] =
