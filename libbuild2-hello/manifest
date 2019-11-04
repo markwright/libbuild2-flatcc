@@ -8,4 +8,4 @@ url: https://example.org/libbuild2-hello
 email: boris@codesynthesis.com
 depends: * build2 >= 0.12.0-
 depends: * bpkg >= 0.12.0-
-
+tests: libbuild2-hello-tests == $
