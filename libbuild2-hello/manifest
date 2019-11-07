@@ -5,7 +5,9 @@ summary: Test build system module for build2
 license: MIT ; MIT License.
 description-file: README.md
 url: https://example.org/libbuild2-hello
-email: boris@codesynthesis.com
+email: users@build2.org
+build-email: builds@build2.org
+builds: all
 depends: * build2 >= 0.12.0-
 depends: * bpkg >= 0.12.0-
 tests: libbuild2-hello-tests == $
