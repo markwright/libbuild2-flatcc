@@ -1,6 +1,9 @@
+# Note: only add `project: build2` if the module's repository is part of the
+#       build2 organization (github.com/build2/).
 : 1
 name: libbuild2-hello
 version: 0.1.0-a.0.z
+project: build2
 summary: Test build system module for build2
 license: MIT ; MIT License.
 description-file: README.md
