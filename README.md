@@ -11,6 +11,7 @@ ability to CI, manage and publish releases, etc.
 ```
 git clone .../libbuild2-hello.git
 cd libbuild2-hello/
+b configure: libbuild2-hello/ config.config.load=~host
 b configure: libbuild2-hello-tests/ config.import.libbuild2_hello=libbuild2-hello/
 b test: libbuild2-hello-tests/
 ```
@@ -26,7 +27,7 @@ cd libbuild2-hello/
 
 bdep init --empty
 
-bdep config create --no-default --forward @mod ../libbuild2-hello-build/module/ cc
+bdep config create --no-default --forward @mod ../libbuild2-hello-build/module/ cc config.config.load=~host
 bdep init @mod -d libbuild2-hello/
 b libbuild2-hello/
 
@@ -43,7 +44,8 @@ b test: libbuild2-hello-tests/  # the same
 b libbuild2-hello/              # update the module directly
 ```
 
-We can also CI our module, manage releases, or publish it:
+We can also CI our module, manage releases, and publish it to the package
+repository:
 
 ```
 bdep ci        # submits only the module (which pulls in the tests)
