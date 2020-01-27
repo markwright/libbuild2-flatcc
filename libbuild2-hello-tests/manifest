@@ -8,7 +8,7 @@ project: build2
 summary: Tests for the test build system module for build2
 license: MIT ; MIT License.
 description-file: README.md
-url: https://example.org/libbuild2-hello
+url: https://github.com/build2/libbuild2-hello
 email: users@build2.org
 builds: none ; Only built together with libbuild2-hello.
 depends: * build2 >= 0.12.0
