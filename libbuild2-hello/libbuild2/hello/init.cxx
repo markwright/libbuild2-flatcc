@@ -12,10 +12,9 @@ namespace build2
     init (scope&,
           scope&,
           const location& l,
-          unique_ptr<module_base>&,
           bool,
           bool,
-          const variable_map&)
+          module_init_extra&)
     {
       info (l) << "module hello initialized";
       return true;
