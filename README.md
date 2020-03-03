@@ -1,5 +1,6 @@
 # libbuild2-hello
-Test build system module for build2
+
+Test build system module for `build2`.
 
 There are two ways to set things up: using only the build system, which works
 best if you just want to kick the tires, or using the project manager, which
