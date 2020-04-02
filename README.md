@@ -12,7 +12,7 @@ ability to CI, manage and publish releases, etc.
 ```
 git clone .../libbuild2-hello.git
 cd libbuild2-hello/
-b configure: libbuild2-hello/ config.config.load=~host
+b configure: libbuild2-hello/ config.config.load=~build2
 b configure: libbuild2-hello-tests/ config.import.libbuild2_hello=libbuild2-hello/
 b test: libbuild2-hello-tests/
 ```
@@ -28,7 +28,7 @@ cd libbuild2-hello/
 
 bdep init --empty
 
-bdep config create --no-default --forward @mod ../libbuild2-hello-build/module/ cc config.config.load=~host
+bdep config create --no-default --forward @mod ../libbuild2-hello-build/module/ cc config.config.load=~build2
 bdep init @mod -d libbuild2-hello/
 b libbuild2-hello/
 
