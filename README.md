@@ -14,7 +14,7 @@ git clone .../libbuild2-hello.git
 cd libbuild2-hello/
 b configure: libbuild2-hello/ config.config.load=~build2
 b configure: libbuild2-hello-tests/ config.import.libbuild2_hello=libbuild2-hello/
-b test: libbuild2-hello-tests/
+b test
 ```
 
 ## Using the project manager
@@ -41,7 +41,7 @@ Once this is done, we can develop using `bdep` or the build system as usual:
 
 ```
 bdep test                       # run tests in libbuild2-hello-tests/
-b test: libbuild2-hello-tests/  # the same
+b test                          # the same
 b libbuild2-hello/              # update the module directly
 ```
 
