@@ -1,0 +1,24 @@
+--- libbuild2-hello/manifest
++++ libbuild2-flatcc/manifest
+@@ -1,16 +1,15 @@
+ # Note: only add `project: build2` if the module's repository is part of the
+ #       build2 organization (github.com/build2/).
+ : 1
+-name: libbuild2-hello
++name: libbuild2-flatcc
+ version: 0.1.0-a.0.z
+-project: build2
++project: libbuild2-flatcc
+ summary: Test build system module for build2
+ license: MIT ; MIT License.
+ description-file: README.md
+-url: https://github.com/build2/libbuild2-hello
+-email: users@build2.org
+-build-warning-email: builds@build2.org
++url: https://github.com/build2/libbuild2-flatcc
++email: gienah@gentoo.org
+ builds: all
+ depends: * build2 >= 0.13.0-
+ depends: * bpkg >= 0.13.0-
+-tests: libbuild2-hello-tests == $
++tests: libbuild2-flatcc-tests == $

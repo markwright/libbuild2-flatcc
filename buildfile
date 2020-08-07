@@ -11,5 +11,5 @@
 # complication does not seem warranted (to do it correctly, we would need to
 # merge the resulting target state, etc).
 #
-import tests = libbuild2-hello-tests/
+import tests = libbuild2-flatcc-tests/
 ./: $tests

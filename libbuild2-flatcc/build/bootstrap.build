@@ -1,4 +1,4 @@
-project = libbuild2-hello
+project = libbuild2-flatcc
 
 using version
 using config

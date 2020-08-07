@@ -1,5 +1,5 @@
 : 1
-summary: libbuild2-hello project repository
+summary: libbuild2-flatcc project repository
 
 #:
 #role: prerequisite
@@ -8,4 +8,4 @@ summary: libbuild2-hello project repository
 
 #:
 #role: prerequisite
-#location: https://git.build2.org/hello/libhello.git
+#location: https://github.com/markwright/flatcc/libflatcc.git

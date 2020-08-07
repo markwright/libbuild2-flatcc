@@ -1,4 +1,4 @@
-project = libbuild2-hello-tests
+project = libbuild2-flatcc-tests
 
 using version
 using config

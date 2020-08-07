@@ -1,4 +1,4 @@
 : 1
-location: libbuild2-hello/
+location: libbuild2-flatcc/
 :
-location: libbuild2-hello-tests/
+location: libbuild2-flatcc-tests/

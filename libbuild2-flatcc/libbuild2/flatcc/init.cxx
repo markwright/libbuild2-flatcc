@@ -1,4 +1,4 @@
-#include <libbuild2/hello/init.hxx>
+#include <libbuild2/flatcc/init.hxx>
 
 #include <libbuild2/diagnostics.hxx>
 
@@ -6,7 +6,7 @@ using namespace std;
 
 namespace build2
 {
-  namespace hello
+  namespace flatcc
   {
     bool
     init (scope&,
@@ -16,18 +16,18 @@ namespace build2
           bool,
           module_init_extra&)
     {
-      info (l) << "module hello initialized";
+      info (l) << "module flatcc initialized";
       return true;
     }
 
     static const module_functions mod_functions[] =
     {
-      {"hello", nullptr, init},
+      {"flatcc", nullptr, init},
       {nullptr, nullptr, nullptr}
     };
 
     const module_functions*
-    build2_hello_load ()
+    build2_flatcc_load ()
     {
       return mod_functions;
     }

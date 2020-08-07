@@ -1,7 +1,7 @@
-using hello
+using flatcc
 
 libs =
-#import libs += libhello%lib{hello}
+#import libs += libflatcc%lib{flatcc}
 
 exe{basics}: {hxx ixx txx cxx}{**} $libs
 

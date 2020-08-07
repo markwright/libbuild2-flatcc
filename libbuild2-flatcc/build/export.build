@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libbuild2/flatcc/
+}
+
+export $out_root/libbuild2/flatcc/$import.target
