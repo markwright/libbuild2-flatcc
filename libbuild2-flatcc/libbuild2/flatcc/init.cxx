@@ -58,7 +58,7 @@ namespace build2
                 module_init_extra& extra)
     {
       tracer trace ("flatcc::guess_init");
-      l5 ([&]{trace << "for " << rs;});
+      l5 ([&]{trace << "for rs:" << rs << " bs: " << bs;});
 
       // We only support root loading (which means there can only be one).
       //
@@ -153,7 +153,7 @@ namespace build2
                  module_init_extra& extra)
     {
       tracer trace ("flatcc::config_init");
-      l5 ([&]{trace << "for " << rs;});
+      l5 ([&]{trace << "for rs: " << rs << " bs: " << bs;});
 
       // We only support root loading (which means there can only be one).
       //
@@ -201,7 +201,7 @@ namespace build2
           module_init_extra& extra)
     {
       tracer trace ("flatcc::init");
-      l5 ([&]{trace << "for " << rs;});
+      l5 ([&]{trace << "for rs: " << rs << " bs: " << bs;});
 
       // We only support root loading (which means there can only be one).
       //
