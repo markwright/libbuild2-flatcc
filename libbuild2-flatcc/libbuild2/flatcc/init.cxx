@@ -62,8 +62,8 @@ namespace build2
 
       // We only support root loading (which means there can only be one).
       //
-      if (rs != bs)
-        fail (loc) << "flatcc.guess module must be loaded in project root";
+      // if (rs != bs)
+      //   fail (loc) << "flatcc.guess module must be loaded in project root";
 
       // Adjust module config.build save priority (code generator).
       //
@@ -157,8 +157,8 @@ namespace build2
 
       // We only support root loading (which means there can only be one).
       //
-      if (rs != bs)
-        fail (loc) << "flatcc.config module must be loaded in project root";
+      // if (rs != bs)
+      //    fail (loc) << "flatcc.config module must be loaded in project root";
 
       // Load flatcc.guess and share its module instance as ours.
       //
@@ -205,8 +205,8 @@ namespace build2
 
       // We only support root loading (which means there can only be one).
       //
-      if (rs != bs)
-        fail (loc) << "flatcc module must be loaded in project root";
+      // if (rs != bs)
+      //   fail (loc) << "flatcc module must be loaded in project root";
 
       // Make sure the c module has been loaded since we need its targets
       // types. Note that we don't try to load it ourselves because of
