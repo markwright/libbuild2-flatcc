@@ -17,5 +17,6 @@
 *.exe.dlls/
 *.exe.manifest
 *.pc
-t_builder.h
-t_reader.h
+t_*.h
+flatbuffers_common_builder.h
+flatbuffers_common_reader.h
