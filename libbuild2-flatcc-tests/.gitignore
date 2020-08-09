@@ -17,3 +17,5 @@
 *.exe.dlls/
 *.exe.manifest
 *.pc
+t_builder.h
+t_reader.h
