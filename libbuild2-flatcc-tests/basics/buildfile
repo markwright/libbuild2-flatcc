@@ -1,6 +1,7 @@
 using flatcc
 
-exe{basics}: cxx{basics} fbs.c{t}
+exe{basics}: {hxx cxx}{basics}
+hxx{basics}: fbs.c{t}
 fbs.c{t}: fbs{t}
 
 fbs.c{t}: flatcc.options =+ --common_builder --common_reader --builder
