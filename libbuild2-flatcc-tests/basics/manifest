@@ -1,0 +1,14 @@
+# Note: only add `project: build2` if the module's repository is part of the
+#       build2 organization (github.com/build2/). Otherwise, use the primary
+#       package name as a project (`project: libbuild2-flatcc`).
+: 1
+name: basics
+version: 0.1.0-a.0.z
+project: libbuild2-flatcc
+summary: Tests for the test build system module for build2
+license: MIT ; MIT License.
+description-file: README.md
+url: https://github.com/markwright/libbuild2-flatcc
+email: gienah@gentoo.org
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0

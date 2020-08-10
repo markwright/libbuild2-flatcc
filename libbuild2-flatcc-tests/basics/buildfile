@@ -1,8 +1,8 @@
 using flatcc
 
-libs =
-#import libs += libflatcc%lib{flatcc}
+libs += -lflatccrt
 
-exe{basics}: {hxx ixx txx cxx}{**} $libs
+exe{basics}: {hxx ixx txx cxx}{basics} $libs : fbs.c{t} : fbs{t}
 
+fbs.c{t}: flatcc.options =+ --builder
 cxx.poptions =+ "-I$out_root" "-I$src_root"

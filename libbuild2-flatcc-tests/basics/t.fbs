@@ -1,0 +1,13 @@
+namespace Basics;
+
+struct P {
+  x:float;
+  y:float;
+}
+
+table T {
+  p:[P];
+  id:string;
+}
+
+root_type T;

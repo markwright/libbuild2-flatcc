@@ -44,7 +44,7 @@ namespace build2
     fbs_c_factory (context& ctx,
                    const target_type&, dir_path d, dir_path o, string n)
     {
-      tracer trace ("flatcc::flatcc_cxx_factory");
+      tracer trace ("flatcc::fbs_c_factory");
 
       // Pre-enter (potential) members as targets. The main purpose of doing
       // this is to avoid searching for existing files in src_base if the
