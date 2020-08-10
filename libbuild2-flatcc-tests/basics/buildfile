@@ -1,9 +1,10 @@
 using flatcc
 
-libs += -lflatccrt
-
-exe{basics}: {hxx ixx txx cxx}{basics} fbs.c{t} $libs
+exe{basics}: cxx{basics} fbs.c{t}
 fbs.c{t}: fbs{t}
 
-fbs.c{t}: flatcc.options =+ --builder
-cxx.poptions =+ "-I$out_root" "-I$src_root"
+fbs.c{t}: flatcc.options =+ --common_builder --common_reader --builder
+c.poptions =+ "-I$out_root/basics" "-I$src_root/basics"
+cxx.poptions =+ "-I$out_root/basics" "-I$src_root/basics"
+c.libs += -lflatccrt
+cxx.libs += -lflatccrt
