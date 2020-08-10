@@ -34,10 +34,7 @@ namespace build2
       static_assert (sizeof (flatcc_c_members) == sizeof (const target*) * 7,
                      "member layout incompatible with array");
 
-      return h_flatbuffers_common_builder != nullptr
-        ? group_view {reinterpret_cast<const target* const*> (&h_flatbuffers_common_builder),
-                      7U}
-        : group_view {nullptr, 0};
+      return group_view {reinterpret_cast<const target* const*> (&h_flatbuffers_common_builder), 7U};
     }
 
     static target*
